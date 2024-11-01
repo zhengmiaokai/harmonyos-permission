@@ -2,7 +2,7 @@
 
 ## 基于HarmonyOS的Permission服务，实现APP权限相关的API封装，单个/多个权限的查询与申请，引导用户跳转设置页开启权限。
 
-### 具体的代码调用参考 EntryAbility 中的代码示例
+### 具体的代码调用参考 EntryAbility 中的代码示例，或者 PermissionsInterface 的接口注释
 
 ```typescript
 // 用AppStorage存储AbilityContext
