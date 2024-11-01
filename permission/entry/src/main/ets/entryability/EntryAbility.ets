@@ -13,22 +13,22 @@ export default class EntryAbility extends UIAbility {
   }
 
   demo(): void {
-    // 单个权限
+    // 单个权限查询与申请
     PermissionsManager.getInstance().checkPermissions(PermissionsConstants.LOCATION, true, [PermissionsConstants.LOCATION, PermissionsConstants.APPROXIMATELY_LOCATION], true).then((status: boolean) => {
       console.debug(`location_status: ${status}`)
     })
 
-    // 通知权限
+    // 通知权限查询与申请
     PermissionsManager.getInstance().checkNotificationPermissions(true, true).then((status => {
       console.debug(`notification_status: ${status}`)
     }))
 
-    // 多个权限
+    // 多个权限查询与申请
     PermissionsManager.getInstance().checkPermissionsList([PermissionsConstants.READ_CALENDAR, PermissionsConstants.WRITE_CALENDAR], true).then((statusResults: boolean[]) => {
       console.debug(`calendar_statusResults: ${statusResults}`)
     })
 
-    // 引导弹窗
+    // 引导用户开启权限
     PermissionsManager.getInstance().showGotoSettingAlertView(PermissionsConstants.LOCATION)
   }
 
