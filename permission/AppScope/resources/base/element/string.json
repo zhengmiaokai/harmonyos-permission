@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "Permission"
+    },
+    {
+      "name": "PERMISSION_PLOCATION",
+      "value": "获取定位权限"
+    },
+    {
+      "name": "PERMISSION_CALENDAR",
+      "value": "获取日历权限"
+    }
+  ]
+}

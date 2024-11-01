@@ -1,0 +1,74 @@
+{
+  "module": {
+    "name": "permissions",
+    "type": "shared",
+    "description": "$string:shared_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }, {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      }, {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      }, {
+        "name": "ohos.permission.PRIVACY_WINDOW"
+      }, {
+        "name": "ohos.permission.GYROSCOPE"
+      }, {
+        "name": "ohos.permission.ACCELEROMETER"
+      }, {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:PERMISSION_PLOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when":"inuse"
+        }
+      }, {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:PERMISSION_PLOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when":"inuse"
+        }
+      }, {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "$string:PERMISSION_PLOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when":"inuse"
+        }
+      }, {
+        "name": "ohos.permission.WRITE_CALENDAR",
+        "reason": "$string:PERMISSION_CALENDAR",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when":"inuse"
+        }
+      }, {
+        "name": "ohos.permission.READ_CALENDAR",
+        "reason": "$string:PERMISSION_CALENDAR",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when":"inuse"
+        }
+      }
+    ]
+  }
+}
